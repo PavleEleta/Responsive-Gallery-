@@ -1,0 +1,79 @@
+#wrapper{
+    font-family: sans-serif;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    max-width: 1024px;
+    width:90%;
+    margin: 0px auto;
+    
+}
+h1{
+    width:100%;
+    padding:10px;
+    margin-left: 20px;
+
+}
+img{
+    max-width: 250px;
+    width:100%;
+    margin:auto;
+}
+.placeholder{
+   
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: rgb(16, 99, 224);
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 3px 3px rgba(100, 100, 228, 0.959);
+
+
+}
+.holder-for-placeholder{
+    flex-basis: 20%;
+    padding:30px;
+    box-sizing: border-box;
+}
+.placeholder>p{
+    background-color: white;
+    margin:0px;
+    padding:10px;
+    border-radius: 0 0 15px 15px;
+}
+
+#some-text{
+    width:100%;
+    font-size: 16px;
+    text-align: justify;
+    margin:20px;
+}
+
+
+ 
+@media screen and (max-width: 1024px){
+    .holder-for-placeholder{
+        flex-basis: 30%;
+    }
+    #some-text{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:800px){
+    .holder-for-placeholder{
+        flex-basis:50%;
+    }
+    #some-text{
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 415px){
+    .holder-for-placeholder{
+        flex-basis: 100%;
+    }
+    #some-text{
+        font-size:24px;
+    }
+}
